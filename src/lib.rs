@@ -207,7 +207,7 @@ macro_rules! enc_ctl {
 /// An Opus encoder with associated state.
 #[derive(Debug)]
 pub struct Encoder {
-	ptr: *mut ffi::OpusEncoder,
+	pub ptr: *mut ffi::OpusEncoder,
 	channels: Channels,
 }
 
